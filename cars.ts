@@ -90,21 +90,21 @@ function calcBgNumber(...numbers: number[]) {
 }
 
 // ● Exercício 5:
-// Escreva um algoritmo que leia uma lista de números inteiros e retorne os números primos.
+// Escreva um algoritmo que leia uma lista de números inteiros e retorne os números primes.
 
 var PnQuantity = 100;
 var numPrimeStart = 2;
 var primeNumbers = [];
 
 for (; numPrimeStart < PnQuantity; numPrimeStart++) {
-  if (primo(numPrimeStart)) {
+  if (prime(numPrimeStart)) {
     primeNumbers.push(numPrimeStart);
   }
 }
 
 console.log(primeNumbers);
 
-function primo(num: number) {
+function prime(num: number) {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
       return true;
