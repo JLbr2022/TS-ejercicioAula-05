@@ -10,10 +10,10 @@ let manofactoyCost = 1000;
 let distributorCost = 0.28;
 let tax = 0.45;
 
-let totalCost = manofactoyCost + (manofactoyCost * distributorCost) + (manofactoyCost * tax);
+let totalCost =
+  manofactoyCost + manofactoyCost * distributorCost + manofactoyCost * tax;
 
-console.log(`Precio del carro: ${totalCost}`)
-
+console.log(`Precio del carro: ${totalCost}`);
 
 // ? ● Exercício 2:
 // Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
@@ -27,9 +27,11 @@ let weight1 = 2;
 let weight2 = 3;
 let weight3 = 5;
 
-let finalNote = (weight1 * note1 + weight2 * note2 + weight3 * note3) / (weight1 + weight2 + weight3);
+let finalNote =
+  (weight1 * note1 + weight2 * note2 + weight3 * note3) /
+  (weight1 + weight2 + weight3);
 
-console.log(`Nota final: ${finalNote}`)
+console.log(`Nota final: ${finalNote}`);
 
 // ? ● Exercício 3:
 // Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
@@ -41,28 +43,28 @@ let months = 5;
 let days = 10;
 
 // Arrow function to get age in days
-let ageInDays = (years:number, months:number, days:number) => years * 365 + months * 30 + days;
+let ageInDays = (years: number, months: number, days: number) =>
+  years * 365 + months * 30 + days;
 
-console.log(`La edad en días es: ${ageInDays(years, months, days)}`)
-
+console.log(`La edad en días es: ${ageInDays(years, months, days)}`);
 
 // ● Exercício 4:
 // Escreva um algoritmo que leia uma lista de números inteiros e mostre o maior deles.
 
-let array = [2,3,6,2,5,7,9,10,42,22,66,33,77,11];
+let array = [2, 3, 6, 2, 5, 7, 9, 10, 42, 22, 66, 33, 77, 11];
 
 let biggestNumber = calcBgNumber(...array);
 
-console.log(`El número más grande es: ${biggestNumber}`)
+console.log(`El número más grande es: ${biggestNumber}`);
 
-function calcBgNumber(...numbers:number[]) {
-    let biggestNumber = numbers[0];
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > biggestNumber) {
-            biggestNumber = numbers[i];
-        }
+function calcBgNumber(...numbers: number[]) {
+  let biggestNumber = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > biggestNumber) {
+      biggestNumber = numbers[i];
     }
-    return biggestNumber;
+  }
+  return biggestNumber;
 }
 
 // ● Exercício 5:
@@ -73,7 +75,6 @@ var numPrimeStart = 2;
 var primeNumbers = [];
 
 for (; numPrimeStart < PnQuantity; numPrimeStart++) {
-
   if (primo(numPrimeStart)) {
     primeNumbers.push(numPrimeStart);
   }
@@ -82,13 +83,11 @@ for (; numPrimeStart < PnQuantity; numPrimeStart++) {
 console.log(primeNumbers);
 
 function primo(num: number) {
-
   for (let i = 2; i < num; i++) {
-
     if (num % i === 0) {
       return true;
     } else {
-    return false;
+      return false;
     }
   }
   return num !== 1;

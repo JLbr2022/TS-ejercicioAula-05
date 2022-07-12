@@ -9,7 +9,7 @@
 let manofactoyCost = 1000;
 let distributorCost = 0.28;
 let tax = 0.45;
-let totalCost = manofactoyCost + (manofactoyCost * distributorCost) + (manofactoyCost * tax);
+let totalCost = manofactoyCost + manofactoyCost * distributorCost + manofactoyCost * tax;
 console.log(`Precio del carro: ${totalCost}`);
 // ? ● Exercício 2:
 // Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
@@ -21,7 +21,8 @@ let note3 = 9;
 let weight1 = 2;
 let weight2 = 3;
 let weight3 = 5;
-let finalNote = (weight1 * note1 + weight2 * note2 + weight3 * note3) / (weight1 + weight2 + weight3);
+let finalNote = (weight1 * note1 + weight2 * note2 + weight3 * note3) /
+    (weight1 + weight2 + weight3);
 console.log(`Nota final: ${finalNote}`);
 // ? ● Exercício 3:
 // Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
