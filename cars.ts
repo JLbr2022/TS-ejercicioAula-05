@@ -68,28 +68,28 @@ function calcBgNumber(...numbers:number[]) {
 // ● Exercício 5:
 // Escreva um algoritmo que leia uma lista de números inteiros e retorne os números primos.
 
-var c = 100;
-var j = 2;
-var numerosPrimos = [];
+var PnQuantity = 100;
+var numPrimeStart = 2;
+var primeNumbers = [];
 
-for (; j < c; j++) {
+for (; numPrimeStart < PnQuantity; numPrimeStart++) {
 
-  if (primo(j)) {
-    numerosPrimos.push(j);
+  if (primo(numPrimeStart)) {
+    primeNumbers.push(numPrimeStart);
   }
 }
 
-console.log(numerosPrimos);
+console.log(primeNumbers);
 
-function primo(numero: number) {
+function primo(num: number) {
 
-  for (var i = 2; i < numero; i++) {
+  for (let i = 2; i < num; i++) {
 
-    if (numero % i === 0) {
+    if (num % i === 0) {
       return true;
     } else {
     return false;
     }
   }
-  return numero !== 1;
+  return num !== 1;
 }
