@@ -6,12 +6,15 @@
 // 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao
 // consumidor.
 
-let manofactoyCost = 1000;
-let distributorCost = 0.28;
+let manofactoryCost = 5000;
+let dealerCost = 0.28;
 let tax = 0.45;
 
-let totalCost =
-  manofactoyCost + manofactoyCost * distributorCost + manofactoyCost * tax;
+function calcValue(manofactoryCost: number, dealerCost: number, tax: number) {
+  return manofactoryCost + manofactoryCost * dealerCost + manofactoryCost * tax;
+}
+
+let totalCost = calcValue(manofactoryCost, dealerCost, tax);
 
 console.log(`Precio del carro: ${totalCost}`);
 
