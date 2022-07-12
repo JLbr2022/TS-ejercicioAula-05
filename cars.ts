@@ -30,11 +30,30 @@ let weight1 = 2;
 let weight2 = 3;
 let weight3 = 5;
 
-let finalNote =
-  (weight1 * note1 + weight2 * note2 + weight3 * note3) /
-  (weight1 + weight2 + weight3);
+function calcGradeAverage(
+  note1: number,
+  note2: number,
+  note3: number,
+  weight1: number,
+  weight2: number,
+  weight3: number
+) {
+  return (
+    (note1 * weight1 + note2 * weight2 + note3 * weight3) /
+    (weight1 + weight2 + weight3)
+  );
+}
 
-console.log(`Nota final: ${finalNote}`);
+let finalGrade = calcGradeAverage(
+  note1,
+  note2,
+  note3,
+  weight1,
+  weight2,
+  weight3
+);
+
+console.log(`Nota final: ${finalGrade}`);
 
 // ? ● Exercício 3:
 // Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
