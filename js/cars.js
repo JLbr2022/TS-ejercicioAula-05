@@ -7,13 +7,13 @@
 // 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao
 // consumidor.
 let manofactoryCost = 5000;
-let dealerCost = 0.28;
-let tax = 0.45;
+const dealerCost = 0.28;
+const tax = 0.45;
 function calcValue(manofactoryCost, dealerCost, tax) {
     return manofactoryCost + manofactoryCost * dealerCost + manofactoryCost * tax;
 }
 let totalCost = calcValue(manofactoryCost, dealerCost, tax);
-console.log(`Precio del carro: ${totalCost}`);
+document.write(`Precio del carro: ${totalCost}<br/>`);
 // ? ● Exercício 2:
 // Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
 // Considerar que a média é
@@ -29,7 +29,7 @@ function calcGradeAverage(note1, note2, note3, weight1, weight2, weight3) {
         (weight1 + weight2 + weight3));
 }
 let finalGrade = calcGradeAverage(note1, note2, note3, weight1, weight2, weight3);
-console.log(`Nota final: ${finalGrade}`);
+document.write(`Nota final: ${finalGrade}<br/>`);
 // ? ● Exercício 3:
 // Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
 // mostre-a expressa apenas em
@@ -39,12 +39,12 @@ let months = 5;
 let days = 10;
 // Arrow function to get age in days
 let ageInDays = (years, months, days) => years * 365 + months * 30 + days;
-console.log(`La edad en días es: ${ageInDays(years, months, days)}`);
+document.write(`La edad en días es: ${ageInDays(years, months, days)}<br/>`);
 // ● Exercício 4:
 // Escreva um algoritmo que leia uma lista de números inteiros e mostre o maior deles.
 let array = [2, 3, 6, 2, 5, 7, 9, 10, 42, 22, 66, 33, 77, 11];
 let biggestNumber = calcBgNumber(...array);
-console.log(`El número más grande es: ${biggestNumber}`);
+document.write(`El número más grande es: ${biggestNumber}<br/>`);
 function calcBgNumber(...numbers) {
     let biggestNumber = numbers[0];
     for (let i = 0; i < numbers.length; i++) {
@@ -55,7 +55,7 @@ function calcBgNumber(...numbers) {
     return biggestNumber;
 }
 // ● Exercício 5:
-// Escreva um algoritmo que leia uma lista de números inteiros e retorne os números primes.
+// Escreva um algoritmo que leia uma lista de números inteiros e retorne os números prims.
 var PnQuantity = 100;
 var numPrimeStart = 2;
 var primeNumbers = [];
@@ -64,7 +64,7 @@ for (; numPrimeStart < PnQuantity; numPrimeStart++) {
         primeNumbers.push(numPrimeStart);
     }
 }
-console.log(primeNumbers);
+document.write(`Númekros primarios:  ${primeNumbers}<br/>`);
 function prime(num) {
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {
