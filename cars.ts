@@ -1,10 +1,10 @@
-// ? ● Exercício 1:
+// ! ● Exercício 1:
+// ? 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao
+// ? consumidor.
 // O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem
 // do distribuidor e dos
 // impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor seja
 // de 28% e os impostos de
-// 45%, escrever um algoritmo que leia o custo de fábrica de um carro e escreva o custo ao
-// consumidor.
 
 let manofactoryCost = 5000;
 const dealerCost = 0.28;
@@ -18,8 +18,8 @@ let totalCost = calcValue(manofactoryCost, dealerCost, tax);
 
 document.write(`Precio del carro: ${totalCost}<br/>`);
 
-// ? ● Exercício 2:
-// Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
+// ! ● Exercício 2:
+// ? Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final deste aluno.
 // Considerar que a média é
 // ponderada e que o peso das notas é: 2,3 e 5.
 
@@ -55,8 +55,8 @@ let finalGrade = calcGradeAverage(
 
 document.write(`Nota final: ${finalGrade}<br/>`);
 
-// ? ● Exercício 3:
-// Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
+// ! ● Exercício 3:
+// ? Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e
 // mostre-a expressa apenas em
 // dias.
 
@@ -70,8 +70,8 @@ let ageInDays = (years: number, months: number, days: number) =>
 
 document.write(`La edad en días es: ${ageInDays(years, months, days)}<br/>`);
 
-// ● Exercício 4:
-// Escreva um algoritmo que leia uma lista de números inteiros e mostre o maior deles.
+// ! ● Exercício 4:
+// ? Escreva um algoritmo que leia uma lista de números inteiros e mostre o maior deles.
 
 let array: number[] = [2, 3, 6, 2, 5, 7, 9, 10, 42, 22, 66, 33, 77, 11];
 
@@ -89,8 +89,8 @@ function calcBgNumber(...numbers: number[]) {
   return biggestNumber;
 }
 
-// ● Exercício 5:
-// Escreva um algoritmo que leia uma lista de números inteiros e retorne os números prims.
+// ! ● Exercício 5:
+// ? Escreva um algoritmo que leia uma lista de números inteiros e retorne os números prims.
 
 var PnQuantity = 50;
 var numPrimeStart = 2;
