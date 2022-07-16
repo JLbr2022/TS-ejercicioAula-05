@@ -25,4 +25,4 @@ Escreva um algoritmo que leia uma lista de números inteiros e retorne os númer
 
 ### Resultados
 
-![enter image description here](https://github.com/JLbr2022/TS-ejercicioAula-05/blob/master/images/results.jpg?raw=true)
+![enter image description here](https://github.com/JLbr2022/TS-ejercicioAula-05/blob/master/images/results1.jpg?raw=true)
