@@ -5,7 +5,7 @@
 // O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem
 // do distribuidor e dos
 // impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor seja
-// de 28% e os impostos de
+// de 28% e os impostos de 45%.
 let manofactoryCost = 5000;
 const dealerCost = 0.28;
 const tax = 0.45;
